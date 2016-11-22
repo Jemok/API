@@ -37,5 +37,9 @@ $api->version('v1', function ($api) {
         $api->get('/', 'UserController@getUser');
 
     });
+
+    $api->post('/parcel', '\App\Http\Controllers\UserController@saveP');
+
+
 });
 
